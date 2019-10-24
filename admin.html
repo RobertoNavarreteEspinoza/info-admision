@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="css/theme.css" type="text/css">
+  <link rel="stylesheet" href="css/estilo.css" type="text/css">
+  <title>Administración y Negocios</title>
+  
+  
+  <!--ETIQUETA POPUP-->
+  <style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 1000px;
+  background-color: #555;
+  color: #fff;
+  text-align: left;
+  border-radius: 10px;
+ margin-left: 5px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin: 5px;
+}
+
+/* Popup arrow 
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+*/
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+  
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container"> <a class="navbar-brand" href="index.html"> <img width="200px	" height="90px" src="img/logo-blanco.png">
+      </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar11">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar11">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"> <a class="nav-link" href="index.html">Inicio</a> </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"> <a class="nav-link" href="admin.html">Administración y Negocios</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="informatica.html">Informática y Telecomunicaciones</a> </li>
+            <ul id="menu">
+                <li class="nav-item">Hotelería, turismo y gastronomía
+                    <ul>
+                      <li><a href="hoteleria.html">Hotelería</a></li>
+                      <li><a href="turismo.html">Turismo</a></li>
+                      <li><a href="gastronomia.html">Gastronomía</a></li>
+                    </ul>
+                    </li>
+            </ul>   
+            <li class="nav-item"> <a class="nav-link" href="disenocomunicacion.html">Diseño & Comunicación</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="salud.html">Salud</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="py-5 text-center text-white h-100 align-items-center d-flex" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(img/header.jpg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="mx-auto col-lg-8 col-md-10">
+          <h1 class="display-3 mb-4">Administración y Negocios</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Ingeniería en administración de empresas</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 p-3">
+          <p>Impartido por: <b>Universidad tecnológica de Chile INACAP.</b>
+            <br>
+            <br>Requisito de ingreso: 
+            <br><b>-Rendir evaluación diagnóstica de Matemáticas.
+              <br>-Obtener un puntaje de aprobación igual o superior a 30%.</b>
+            <br>
+            <br>Título: <b>Ingeniero en administración de empresas.</b>
+            <br>Duración: <b>8 Semestres.</b>
+            <br>Acreditación: <b>3 Años (Noviembre 2021).</b>
+            <br>Jornada: <b>Diurna. </b>
+            <br>Beneficio: <b>No adscrita a la gratuidad. </b> 
+            <br>
+          </p>
+          <p>
+      <br>
+      
+
+		  <div id="perfilegreso">
+										<h3>Perfíl de egreso</h3>
+
+							<div class="popup" onclick="myFunction1()">Click para ver perfíl de egreso.
+							  <span class="popuptext" id="myPopup">
+							  <div>
+			     <ul>
+        El Ingeniero en Administración de Empresas, titulado de la Universidad Tecnológica de Chile INACAP,
+         se desempeña con responsabilidad en la administración de las áreas funcionales, orientando su gestión
+          al logro de las metas , bajo un enfoque sistémico de la organización y su entorno, y dominio integral
+           de su ámbito disciplinar. Asimismo, diseña y propone soluciones integrando tecnologías actualizadas
+            para la mejora continua, la creación de nuevos negocios y desarrollo de emprendimientos en los distintos
+             sectores productivos y de servicios del país.<br><br>Se desempeña competentemente en las siguientes áreas,
+              en concordancia con las requeridas para el ejercicio de su profesión:
+              <br>
+              <br>
+              Área de Desempeño I: Gestión de Áreas Funcionales de la Organización.
+              <br>
+              <br>1.Administra procesos financieros en coherencia con la estrategia de la organización,
+               fundamentando su actuar, de acuerdo a normativas y legislación vigente.
+               <br>
+               <br>2.Administra procesos de marketing, ventas y operaciones comerciales, considerando la situación,
+               tendencias del mercado y las necesidades de los consumidores, trabajando de manera colaborativa para
+                el logro de metas conjuntas.
+                <br>
+                <br>3.Administra procesos de gestión de personas, de acuerdo a las necesidades de la organización,
+                 normativa interna, legislación vigente y las condiciones del entorno, comunicando y transfiriendo 
+                 información de manera efectiva.<br><br>Área de Desempeño II: Administración y Emprendimiento.
+                 <br>
+                 <br>
+                 4.Diseña soluciones factibles asociadas a la mejora continua en el ámbito de la organización,
+                  el desarrollo de nuevos negocios  y proyectos de emprendimiento, fundamentando sus decisiones,
+                   bajo un enfoque sistémico y haciendo uso de tecnologías actualizadas.
+                   <br>
+                   <br>
+                   5.Fundamenta propuesta de solución asociada a la mejora continua en la organización, el desarrollo 
+                   de nuevos negocios y proyectos de emprendimiento, logrando la adhesión y comprensión de otros.
+
+				</ul>
+				
+			</div>
+							  
+							  </span>
+							</div>
+
+							<script>
+							// When the user clicks on div, open the popup
+							function myFunction1() {
+							  var popup = document.getElementById("myPopup");
+							  popup.classList.toggle("show");
+							}
+							</script>
+
+		  </div>
+          </p>
+        </div>
+        <div class="col-md-6 p-3">
+          <p>Equipo directivo:<br><br>Director de carrera: Fernando Pantoja Oakley<br>Correo: fpantoja@inacap.cl&nbsp;<br>Teléfono: +56224722920 <br>
+            <br>Coordinador de carrera: Katherine Sepulveda Arias<br>Correo: ksepul@inacap.cl&nbsp;<br>Teléfono: +56224722514 <br>
+            <br>Coordinador de carrera: Sandra López Araneda<br>Correo: slopeza@inacap.cl&nbsp;<br>Teléfono: +56224722565
+            <br>
+            <br>Coordinador de especialidad: Maria Gallegos Andrade<br>Correo: mgallegosa@inacap.cl&nbsp;<br>Teléfono: +56224722928
+            <br>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  
+
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h6 class=""><b>Campo Ocupacional</b>
+            <br></h6>
+
+              <ul>El titulado de la carrera de Ingeniería en Administración de Empresas de la Universidad Tecnológica de Chile INACAP podrá desempeñarse en empresas e instituciones públicas y/o privadas de todo tipo, así como emprendimientos propios, administrando los procesos en los ámbitos de las finanzas, gestión de organizaciones, marketing, ventas y operaciones comerciales y gestión de personas. Por otra parte, estará facultado para prestar servicios de asesoría, además del ejercicio libre de su profesión.</ul>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <br><br>
+
+
+
+  <div >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h6 class=""><b>Admisión Primer Semestre 2020</b><br></h6><img class="img-fluid d-block" src="img/aranceladmin.PNG" style="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+
+<br>
+
+<br><br>
+
+<div >
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+          <h6 class="text-left"><a href="http://www.inacap.cl/web/pdf_mallas/01_administracion_y_negocios/IA-IA0-1_Administracion_U.pdf"><b>Revisar Malla Ingeniería en Administración de Empresas&nbsp;</b></a><br></h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 p-3">
+          <div class="card"></div> <br>
+          <h1 class="text-center">Administración de empresas</h1><br>
+          <div class="row">
+            <div class="col-md-6">
+              <p>Impartido por: <b>Centro Formación Técnica INACAP.</b>
+                <br>
+                <br>Requisito de ingreso: 
+                <br><b>Rendir evaluación diagnóstica de Matemáticas 
+                  <br>-Obtener un puntaje de aprobación igual o superior a 30%.</b>
+                  <br>
+                  <br>Título: <b>Técnico de Nivel Superior en Administración de Empresas.</b>
+                  <br>Duración: <b>4 Semestres.</b>
+                  <br>Acreditación: <b>7 Años (Enero 2025).</b>
+                  <br><br>Jornada: Diurna - Vespertina.
+                  <br>
+                  <br>Beneficios: <b>Adscrita a gratuidad.</b>
+                   <br> </p>
+			  
+			  			  	<div id="perfilegreso1">
+                    <h3>Perfíl de egreso</h3>
+                    <div class="popup" onclick="myFunctionX()">Click para ver perfíl de egreso.
+                      <span class="popuptext" id="myPopupX">
+                      <div>
+                      <ul>
+                        El Técnico de Nivel Superior en Administración de Empresas, titulado del Centro de Formación Técnica de INACAP, se desempeña responsablemente en la ejecución de procedimientos asociados a la gestión de las áreas funcionales y mejora continua de procesos en la organización, haciendo uso de recursos tecnológicos actualizados y orientando su accionar al contexto sistémico de la organización y cambiante del entorno; integrando en su quehacer herramientas para el emprendimiento en los distintos sectores productivos y de servicios del país.<br>Se desempeña competentemente en las siguientes áreas, en concordancia con las requeridas para el ejercicio de su profesión:<br>Área de Desempeño I: Gestión de Áreas Funcionales de la Organización.<br>1.Ejecuta procedimientos de administración financiera, de acuerdo a estrategias, normativa y políticas de la organización y legislación vigente, comunicando información de manera efectiva.<br>2.Ejecuta procedimientos asociados al marketing, ventas y operaciones comerciales, trabajando colaborativamente  de acuerdo a las estrategias, normativa, políticas de la organización y legislación vigente.<br>3.Ejecuta procedimientos asociados a la gestión de personas de acuerdo a las estrategias, normativa, políticas de la organización y legislación vigente, comunicando información de manera efectiva.<br>Área de Desempeño II: Administración y Emprendimiento.<br>4.Asiste en procesos asociados a la mejora continua de las áreas funcionales de la organización, fundamentando sus acciones y haciendo uso de recursos tecnológicos actualizados.<br>5.Desarrolla procesos asociados a proyectos de emprendimiento, fundamentando sus decisiones y adaptándose a un contexto cambiante, integral y sistémico.
+                        </ul>				
+                      </div>							  
+                      </span>
+                      </div>
+                      <script>
+                      
+                      function myFunctionX() {
+                      var popup = document.getElementById("myPopupX");
+                      popup.classList.toggle("show");
+                      }
+                      </script>
+                  </div>
+
+            </div>
+            <div class="col-md-6 p-3">
+              <p>Equipo directivo:<br><br>Director de carrera: Fernando Pantoja Oakley<br>Correo: fpantoja@inacap.cl&nbsp;<br>Teléfono: +56224722920 <br>
+                <br>Coordinador de carrera: Katherine Sepulveda Arias<br>Correo: ksepul@inacap.cl&nbsp;<br>Teléfono: +56224722514 <br>
+                <br>Coordinador de carrera: Sandra López Araneda<br>Correo: slopeza@inacap.cl&nbsp;<br>Teléfono: +56224722565
+                <br>
+                <br>Coordinador de especialidad: Maria Gallegos Andrade<br>Correo: mgallegosa@inacap.cl&nbsp;<br>Teléfono: +56224722928
+                <br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h6 class=""><b>Campo Ocupacional</b>
+              <br></h6>
+  
+                <ul>El Técnico de Nivel Superior en Administración de Empresas, titulado del Centro de Formación Técnica de INACAP, está preparado para ejecutar procedimientos administrativos asociados a la gestión de áreas funcionales de la organización. Podrá desempeñarse principalmente en áreas operativas de finanzas, marketing, ventas y gestión de personas, en diferentes empresas e instituciones públicas y/o privadas de todo tipo. Por otra parte, estará facultado para iniciar emprendimientos propios y/o prestar servicios de asistencia técnica, además del ejercicio libre de su profesión.</ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  
+    <br><br>
+
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h6 class="text-left"><b>Admisión Primer Semestre 2020</b><br></h6><img class="img-fluid d-block" src="img/aranceladminempresa.PNG" style="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+
+  <div >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <h6 class="text-left"><a href="http://www.inacap.cl/web/pdf_mallas/01_administracion_y_negocios/AE-AE0-2_Administracion_CFT.pdf"><b>Revisar Malla Administración de Empresas&nbsp;</b></a><br></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-12">
+            <div class="col-lg-12 p-3">
+              <div class="card"></div>
+              <h1 class="text-center">Contabilidad general</h1>
+              <div class="row">
+                <div class="col-md-6">
+                  <p>Impartido por: <b>Centro Formación Técnica INACAP.</b>
+                    <br><br>Requisito de ingreso: <b>Rendir evaluación diagnóstica de Matemáticas. 
+                      <br>-Obtener un puntaje de aprobación igual o superior a 30%.</b>
+                      <br><br>Título: <b>Contador Auditor.</b>
+                      <br>Duración: <b>4 Semestres.</b>
+                      <br>Acreditación: <b>7 Años (Enero 2025).</b>
+                      <br>Jornada: <b>Diurna&nbsp;</b>
+                      <br>Beneficios: <b>Adscrita a gratuidad.</b>
+                    </p>
+				  
+				  
+				  		  <div id="perfilegreso">
+										<h3>Perfíl de egreso</h3>
+
+							<div class="popup" onclick="myFunction()">Click para ver perfíl de egreso.
+							  <span class="popuptext" id="myPopupXX">
+							  <div>
+			     <ul>
+							Está capacitado para aplicar soluciones en las áreas contables, tributarias y financieras, de acuerdo con los principios de la ética profesional, en todo tipo de organizaciones.<br><br>El egresado de la carrera de Contabilidad General del Centro de Formación Técnica INACAP:<br><br><li>Prepara estados financieros, para apoyar la toma de decisiones financieras y tributarias, de organizaciones públicas o privadas, fundamentando sus decisiones utilizando diversas fuentes de información para sustentar acciones propias, demostrando responsabilidad y respeto en el cumplimiento de sus tareas y compromisos adquiridos conforme a estándares, normas nacionales e internacionales vigentes.<br><br></li><li>Aplica procedimientos del área de control interno a procesos contables, para la resolución de problemas, demostrando responsabilidad y respeto en el cumplimiento de sus tareas y compromisos adquiridos conforme a estándares, considerando las características de la organización.<br><br></li><li>Genera informes integrados respecto a la situación administrativa, económica, financiera y de gestión de personas, para la empresa, de acuerdo a la normativa vigente, trabajando colaborativamente para la consecución de las metas, utilizando herramientas tecnológicas a nivel intermedio para procesar y comunicar información.<br>
+
+			
+				</ul>
+				
+			</div>
+							  
+							  </span>
+							</div>
+
+							<script>
+							// When the user clicks on div, open the popup
+							function myFunction() {
+							  var popup = document.getElementById("myPopupXX");
+							  popup.classList.toggle("show");
+							}
+							</script>
+
+		  </div>
+				  
+				  
+				  
+                </div>
+                <div class="col-md-6 p-3">
+                  <p>Equipo directivo:<br><br>Director de carrera: Fernando Pantoja Oakley<br>Correo: fpantoja@inacap.cl&nbsp;<br>Teléfono: +56224722920 <br>
+                    <br>Coordinador de carrera: Katherine Sepulveda Arias<br>Correo: ksepul@inacap.cl&nbsp;<br>Teléfono: +56224722514 <br>
+                    <br>Coordinador de carrera: Sandra López Araneda<br>Correo: slopeza@inacap.cl&nbsp;<br>Teléfono: +56224722565
+                    <br>
+                    <br>Coordinador de especialidad: Maria Gallegos Andrade<br>Correo: mgallegosa@inacap.cl&nbsp;<br>Teléfono: +56224722928
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h6 class=""><b>Campo Ocupacional</b>
+              <br></h6>
+                <ul>El Contador General del Centro de Formación Técnica INACAP podrá desempeñarse en todo tipo de empresas, en áreas de contabilidad, tributaria, costos, presupuesto, tesorería, crédito, cobranza y remuneraciones, o como asesor de empresas en forma independiente, como outsourcing contable.</ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  
+    <br><br>
+
+
+  <div class="py-5">
+    <div class="container">
+      <div class="row">     
+                    <div class="col-md-12">
+                      <h6 class="text-left"><b>Admisión Primer Semestre 2020</b><br></h6><img class="img-fluid d-block" src="img/arancelcontador.PNG" style="">
+                    </div>    
+      </div>
+    </div>
+  </div>
+
+  <br><br>
+
+  <div >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <h6 class="text-left"><a href="http://www.inacap.cl/web/pdf_mallas/01_administracion_y_negocios/47-470-5_Administracion_CFT.pdf"><b>Revisar Malla Contabilidad general&nbsp;</b></a><br></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+<!---ING COMERCIAL [ARTICULADO]-->
+<div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-12">
+            <div class="col-lg-12 p-3">
+              <div class="card"></div>
+              <h1 class="text-center">Ingeniería Comercial</h1> <br>
+              <div class="row">
+                <div class="col-md-6">
+                  <p>Impartido por: <b>Universidad tecnológica de Chile INACAP.</b>
+                    <br>
+                    <br>Requisito de ingreso: 
+                    <br><b>-Rendir evaluación diagnóstica de Matemáticas.
+                      <br>-Obtener un puntaje de aprobación igual o superior a 30%.</b> <br>
+                    <br>Título: <b>Ingeniero Comercial.</b>
+                    <br>Duración: <b>2 Semestres.</b>
+                    <br>Jornada: <b>Diurna-Vespertina.&nbsp;</b>
+                    <br>Beneficios: <b>Adscrita a gratuidad.</b></p>
+				  
+				  
+				  		  <div id="perfilegreso">
+										<h3>Perfíl de egreso</h3>
+
+							<div class="popup" onclick="myFunctionZ()">Click para ver perfíl de egreso.
+							  <span class="popuptext" id="myPopupZ">
+							  <div>
+			     <ul>
+							El egresado de la carrera de Ingeniería Comercial de la Universidad Tecnológica de Chile INACAP, está capacitado para desarrollar planes estratégicos en organizaciones y emprendimientos, formular estrategias financieras y de gestión de personas, diseñar estrategias de marketing y ventas, evaluar soluciones a problemas propios del ámbito de la administración, organizaciones y/o emprendimientos, independiente de su rubro, tamaño y complejidad. Además, podrá ejercer libremente su profesión, generando ideas de negocios productivos, consultivos y de asesorías.<br>
+              <br>
+                    El egresado de la carrera de Ingeniería Comercial de la Universidad Tecnológica de Chile INACAP:<br>
+                    -Desarrolla planes estratégicos en organizaciones y emprendimientos, comunicando de manera efectiva, creando valor que aporte al desarrollo del país y resolviendo problemas de carácter multidisciplinario, considerando las variables de las áreas funcionales de la organización y las asociadas al entorno.<br>
+                    -Formula estrategias financieras para la organización, fundamentando sus decisiones en el ámbito teórico y de su profesión, de acuerdo a la normativa vigente y las políticas internas.<br>
+                    -Diseña estrategias de marketing y ventas, proponiendo soluciones y alternativas innovadoras y pertinentes considerando las políticas generales de la organización para la generación de valor.<br>
+                    -Formula estrategias de gestión de personas de una organización, trabajando en equipo y de acuerdo a las necesidades de la empresa, las condiciones del entorno y la normativa vigente.<br>
+                    -Participa en procesos de diseño e implementación de soluciones a problemas propios del ámbito de la administración, organizaciones y/o emprendimientos, integrando diversas variables que contribuyan al desarrollo de la organización y su quehacer profesional, fundamentado sus decisiones en el ámbito académico y de su profesión, con una comunicación efectiva, conforme a metodologías de investigación aplicada.<br>
+                            </ul>
+				
+			</div>
+							  
+							  </span>
+							</div>
+
+							<script>
+							// When the user clicks on div, open the popup
+							function myFunctionZ() {
+							  var popup = document.getElementById("myPopupZ");
+							  popup.classList.toggle("show");
+							}
+							</script>
+
+		  </div>
+				  
+				  
+				  
+                </div>
+                <div class="col-md-6 p-3">
+                  <p>Equipo directivo:<br><br>Director de carrera: Fernando Pantoja Oakley<br>Correo: fpantoja@inacap.cl&nbsp;<br>Teléfono: +56224722920 <br>
+                    <br>Coordinador de carrera: Katherine Sepulveda Arias<br>Correo: ksepul@inacap.cl&nbsp;<br>Teléfono: +56224722514 <br>
+                    <br>Coordinador de carrera: Sandra López Araneda<br>Correo: slopeza@inacap.cl&nbsp;<br>Teléfono: +56224722565
+                    <br>
+                    <br>Coordinador de especialidad: Maria Gallegos Andrade<br>Correo: mgallegosa@inacap.cl&nbsp;<br>Teléfono: +56224722928
+                    <br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h6 class=""><b>Campo Ocupacional</b>
+              <br></h6>
+                <ul> El Ingeniero Comercial de la Universidad Tecnológica de Chile INACAP podrá desempeñarse en empresas e instituciones públicas y/o privadas de todo tipo, gestionando o asesorando a la dirección de la empresa en los ámbitos de la gestión de organizaciones, finanzas, marketing, ventas y gestión de personas. Por otra parte está facultado para iniciar emprendimientos propios y/o prestar servicios de asesoría, además del ejercicio libre de su profesión.
+                  </ul>
+            </div>
+        </div>
+      </div>
+    </div>
+  
+    <br><br>
+
+
+  <div class="py-5">
+    <div class="container">
+      <div class="row">     
+                    <div class="col-md-12">
+                      <h6 class="text-left"><b>Admisión Primer Semestre 2020</b><br></h6><!--<img class="img-fluid d-block" src="img/arancelcontador.PNG" style=""> --> -Gratuidad en matrículas.
+                    </div>    
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <b></b>
+        <!--
+        <div class="col-md-12">
+          
+            <h6 class="text-left"><b></b>  <p>Contabilidad General (Cód. 47-470-5)&nbsp;</b><br></h6><img class="img-fluid d-block" src="img/mallacontador.PNG">
+          
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!--FIN-->
+  <div class="py-5 text-white" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://static.pingendo.com/cover-bubble-dark.svg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center align-self-center p-4">
+          <p class="mb-5"> <strong>INACAP Sede Apoquindo<strong> <br>Dirección: Apoquindo 7282, Las Condes<br> Teléfono: (56) 224722500<br> Mail: apoquindo@inacap.cl<br></strong></strong></p><strong><strong>
+<div class="row">
+                <div class="col-md-12 d-flex align-items-center justify-content-around"> <a href="#">
+                    <i class="d-block fa fa-facebook-official text-light fa-lg mx-2"></i>
+                  </a> <a href="#">
+                    <i class="d-block fa fa-instagram text-light fa-lg mx-2"></i>
+                  </a>   <a href="#">
+                    <i class="d-block fa fa-twitter text-light fa-lg ml-2"></i>
+                  </a> </div>
+              </div>
+            </strong></strong>
+        </div><strong><strong>
+            <div class="col-md-6 p-0"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.5755200761105!2d-70.5555654838491!3d-33.40823690273494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cec02ea4cebf%3A0x29dd711ed6294ee3!2sInacap+Apoquindo!5e0!3m2!1ses!2scl!4v1540305071437" width="400" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe></div>
+          </strong></strong>
+      </div><strong><strong>
+        </strong></strong>
+    </div><strong><strong>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </strong></strong>
+  </div>
+  
+</body>
+
+</html>

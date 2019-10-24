@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="css/theme.css" type="text/css">
+  <link rel="stylesheet" href="css/estilo.css" type="text/css">
+
+  
+  <!--ETIQUETA POPUP-->
+  <style>
+      /* Popup container - can be anything you want */
+      .popup {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      /* The actual popup */
+      .popup .popuptext {
+        visibility: hidden;
+        width: 1000px;
+        background-color: #555;
+        color: #fff;
+        text-align: left;
+        border-radius: 10px;
+       margin-left: 5px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin: 5px;
+      }
+      
+      /* Popup arrow 
+      .popup .popuptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+      
+      */
+      
+      /* Toggle this class - hide and show the popup */
+      .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+      }
+      
+      /* Add animation (fade in the popup) */
+      @-webkit-keyframes fadeIn {
+        from {opacity: 0;} 
+        to {opacity: 1;}
+      }
+      
+      @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+      }
+      </style>
+  <title>Salud</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container"> <a class="navbar-brand" href="index.html"> <img width="200px	" height="90px" src="img/logo-blanco.png">
+      </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar11">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar11">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"> <a class="nav-link" href="index.html">Inicio</a> </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"> <a class="nav-link" href="admin.html">Administración y Negocios</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="informatica.html">Informática y Telecomunicaciones</a> </li>
+            <ul id="menu">
+                <li class="nav-item">Hotelería, turismo y gastronomía
+                    <ul>
+                      <li><a href="hoteleria.html">Hotelería</a></li>
+                      <li><a href="turismo.html">Turismo</a></li>
+                      <li><a href="gastronomia.html">Gastronomía</a></li>
+                    </ul>
+                    </li>
+            </ul>   
+            <li class="nav-item"> <a class="nav-link" href="disenocomunicacion.html">Diseño & Comunicación</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="salud.html">Salud</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="py-5 text-center text-white h-100 align-items-center d-flex" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(img/header.jpg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="mx-auto col-lg-8 col-md-10">
+          <h1 class="display-3 mb-4">Salud</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+ 
+ 
+      <!--NUTRICION Y DIETETICA-->
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+     <h1>Nutrición y Dietética</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 p-3">
+            <p>Impartido por: <b>Universidad Tecnológica de Chile INACAP.</b>
+            <br><br>Requisito de ingreso: <br>
+            <b>- 40%: Notas enseñanza media (NEM).</b>
+            <br><b>- 60% Test Vocacional (Fecha será previamente anunciada).</b><br>
+            <br>Grado Académico: <b>Licenciado en Nutrición y Dietética.</b>
+            <br>Duración: <b>10 Semestres.</b>
+            <br>Acreditación: <b>3 Años (Noviembre 2021).</b>
+            <br>Título: <b>Nutricionista Dietista.</b>
+            <br>Jornada: <b>Diurna.</b>
+            <br>Beneficios: <b>No adscrita a la gratuidad.</b> <br></p>
+            <br>
+            <br>
+            <div id="perfilegreso">
+                <h3>Perfíl de egreso</h3>
+
+          <div class="popup" onclick="myFunction1()">Click para ver perfíl de egreso.
+            <span class="popuptext" id="myPopup">
+            <div>
+       <ul>
+          Está capacitado para desempeñarse en labores de intervención, educación, gestión e investigación, para la salud nutricional de la persona, familia y comunidad, tanto en el ámbito público como privado.<br>El egresado de la carrera de Nutrición y Dietética de la Universidad Tecnológica de Chile INACAP:<br><li>Proporciona atención integral en alimentación y nutrición para la prevención, recuperación y rehabilitación de la salud en las distintas etapas del ciclo vital, aplicando el juicio crítico en la toma de decisiones profesionales a partir de las normativas éticas, técnicas y legales vigentes.<br></li><li>Gestiona proyectos y programas de salud y nutrición dirigidos a la persona, familia y comunidad para fomentar estilos de vida saludable, proponiendo soluciones innovadoras ,  mediante una comunicación acorde con  a la situación y características de los participantes.<br></li><li>Gestiona servicios de alimentación y nutrición en el ámbito público y privado, considerando las características de la población y recursos disponibles, de acuerdo con   a  estándares de calidad y normativas vigentes, y liderando la interdependencia positiva de los miembros del equipo a su cargo.<br></li><li>Participa en proyectos de investigación del área de salud, alimentación y nutrición, para contribuir a la situación de salud de la población y/o desarrollo de su disciplina.  <br>Durante el proceso formativo, los alumnos de INACAP desarrollarán integradamente las competencias de especialidad, genéricas (o transversales) y las que constituyen el Sello INACAP: compromiso, capacidad emprendedora y autogestión, demostrando dominio progresivo de su especialidad, y logrando un desempeño efectivo y eficiente que facilite su inserción al mundo laboral.
+    </ul>
+    
+  </div>
+            
+            </span>
+          </div>
+
+          <script>
+          // When the user clicks on div, open the popup
+          function myFunction1() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+          }
+          </script>
+
+  </div>
+          <p>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <br>
+            <p>Equipo Directivo:<br>
+              <br>Director de Carrera (I):<b> María Capurro Spadaro.</b>
+              <br>Correo: <b>mcapurro@inacap.cl&nbsp;</b>
+              <br>Teléfono: <b>+56224722506</b>
+              <br>
+              <br>Coordinador de Carrera: <b>Camila Gonzalez Saa.</b>
+              <br>Correo: <b>cagonzalezs@inacap.cl&nbsp;</b>
+              <br>Teléfono: <b>+56224722515</b>
+
+            </p>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div>
+      <div class="container">
+        <div class="row">
+<div class="col-md-12">
+      <h6 class=""><b>Campo Ocupacional</b>
+        <br></h6>
+        <ul>El egresado de la carrera de Nutrición y Dietética de la Universidad Tecnológica de Chile INACAP podrá desempeñarse en los distintos niveles de atención de los servicios de salud del sistema público (consultorios generales urbanos y rurales, centros de referencia de salud y hospitales) y en el sistema privado (clínicas, centros de salud y centros de cuidados especializados);, también en empresas e instituciones de diferentes rubros, organismos nacionales e internacionales y en cargos docentes del ámbito académico. Además, del ejercicio libre de su profesión.</ul>
+    </div></div></div></div>
+
+
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h6 class=""><b>Admisión Primer Semestre 2020</b><br><br></h6><img class="img-fluid d-block" src="img/arancelnutricion.PNG" style="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br><br>
+
+  <div >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <h6 class="text-left"><a href="http://www.inacap.cl/web/pdf_mallas/11_salud/T9-T9-4_Salud_U.pdf"><b>Revisar Malla Nutrición y Dietética&nbsp;</b></a><br></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+ <br><br>
+ 
+ 
+  <div class="py-5 text-white" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://static.pingendo.com/cover-bubble-dark.svg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center align-self-center p-4">
+          <p class="mb-5"> <strong>INACAP Sede Apoquindo<strong> <br>Dirección: Apoquindo 7282, Las Condes<br> Teléfono: (56) 224722500<br> Mail: apoquindo@inacap.cl<br></strong></strong></p><strong><strong>
+			<div class="row">
+                <div class="col-md-12 d-flex align-items-center justify-content-around"> <a href="#">
+                    <i class="d-block fa fa-facebook-official text-light fa-lg mx-2"></i>
+                  </a> <a href="#">
+                    <i class="d-block fa fa-instagram text-light fa-lg mx-2"></i>
+                  </a>   <a href="#">
+                    <i class="d-block fa fa-twitter text-light fa-lg ml-2"></i>
+                  </a> </div>
+              </div>
+            </strong></strong>
+        </div><strong><strong>
+            <div class="col-md-6 p-0"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.5755200761105!2d-70.5555654838491!3d-33.40823690273494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cec02ea4cebf%3A0x29dd711ed6294ee3!2sInacap+Apoquindo!5e0!3m2!1ses!2scl!4v1540305071437" width="400" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe></div>
+          </strong></strong>
+      </div><strong><strong>
+        </strong></strong>
+    </div><strong><strong>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </strong></strong>
+  </div>
+ 
+</body>
+
+</html>

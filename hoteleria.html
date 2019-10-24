@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="css/theme.css" type="text/css">
+  <link rel="stylesheet" href="css/estilo.css" type="text/css">
+  <title>Hotelería</title>
+  
+ 
+  
+  
+  
+  
+  
+  
+    
+  <!--ETIQUETA POPUP-->
+  <style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 1000px;
+  background-color: #555;
+  color: #fff;
+  text-align: left;
+  border-radius: 10px;
+ margin-left: 5px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin: 5px;
+}
+
+/* Popup arrow 
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+*/
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container"> <a class="navbar-brand" href="index.html"> <img width="200px	" height="90px" src="img/logo-blanco.png">
+      </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar11">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar11">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"> <a class="nav-link" href="index.html">Inicio</a> </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+                <li class="nav-item"> <a class="nav-link" href="admin.html">Administración y Negocios</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="informatica.html">Informática y Telecomunicaciones</a> </li>
+                <ul id="menu">
+                    <li class="nav-item">Hotelería, turismo y gastronomía
+                        <ul>
+                          <li><a href="hoteleria.html">Hotelería</a></li>
+                          <li><a href="turismo.html">Turismo</a></li>
+                          <li><a href="gastronomia.html">Gastronomía</a></li>
+                        </ul>
+                        </li>
+                </ul>   
+                <li class="nav-item"> <a class="nav-link" href="disenocomunicacion.html">Diseño & Comunicación</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="salud.html">Salud</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="py-5 text-center text-white h-100 align-items-center d-flex" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(img/header.jpg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="mx-auto col-lg-8 col-md-10">
+          <h1 class="display-3 mb-4">Hotelería</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+	<!--ADMINISTRACION HOTELERIA Y SERVICIOS-->
+	
+  <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+       <h1>Administración en Hotelería y Servicios</h1><br><br> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 p-3">
+              <p>Impartido por: <b>Instituto Profesional INACAP</b>
+              <br>
+              <br>Duración: <b>8 Semestres.</b>
+              <br>Acreditación: <b>5 Años (Diciembre 2022).</b>
+              <br>Título: <b>Administrador en Hotelería y Servicios.</b>
+              <br>Jornada: <b>Diurna.</b>
+              <br>Beneficios: <b>Adscrita a gratuidad.</b>
+              <br>
+              <br>Se requiere para el transcurso de la carrera:
+              <br><b>-1 Uniforme de servicio.
+              <br>-1 Uniforme de gastronomía.
+              <br>
+              <br>
+              <div> <a href="https://drive.google.com/file/d/1uh8eCU72R6viKqpiVLp77oJL1u41iZXm/view?usp=sharing" >Revisar para ver Instructivo Orden, Higiene y Seguridad Carreras de Gastronomía y Hotelería - Talleres de Especialidad</a></div>
+
+<br><br>
+
+              </b>
+            </p>
+        
+        
+        
+     <div id="perfilegreso">
+                      <h3>Perfíl de egreso</h3>
+  
+                <div class="popup" onclick="myFunction10()">Click para ver perfíl de egreso.
+                  <span class="popuptext" id="myPopup20">
+                  <div>
+             <ul>
+  El Administrador en Hotelería y Servicios del Instituto Profesional INACAP, se desempeña en el diseño, gestión y mejoramiento de los procesos de desarrollo de productos y servicios de alimentos y bebidas; de los  procesos asociados a la asistencia al huésped, organización de housekeeping , evaluación de satisfacción y resolución de conflictos del cliente. Además, analiza tendencias de mercado, aplica estrategias de fidelización de clientes, evalúa registros de venta, controla adquisiciones y presupuesto y administra recursos humanos. Su desempeño se centra en la gestión eficiente de la atención al cliente y comunicación en su lengua materna e idioma inglés, en el aseguramiento de una experiencia satisfactoria, incorporando patrimonio, respetando multiculturalidad, basada en un servicio de excelencia y las competencias Sello del titulado de INACAP.<br><br>Se desempeña competentemente en las siguientes áreas, en concordancia con las requeridas para el ejercicio de su profesión:<br><br>Área de Desempeño I: Procesos Operacionales de Servicios de Alojamiento y Alimentos &amp; Bebidas:<br><br>Gestiona procesos operativos de servicios de alojamiento, integrando equipos de trabajo, de acuerdo a normativa vigente y estándares de la empresa.<br>Gestiona procesos operativos de servicios de alimentos &amp; bebidas, integrando equipos de trabajo, de acuerdo a normativa vigente y estándares de la empresa.<br>Diseña protocolos para el aseguramiento de una experiencia satisfactoria del cliente, en servicios de alojamiento y alimentos &amp; bebidas, considerando la comprensión y adhesión de otros en su lengua materna e idioma inglés, en la mejora continua de dichos protocolos.<br><br>Área de Desempeño II: Gestión Administrativa de Servicios de Alojamiento y Alimentos &amp; Bebidas.<br><br>Administra recursos materiales, financieros, tecnológicos y humanos asociados a los procesos relacionados a recepción, housekeeping, alimentos &amp; bebidas, a través de la toma de decisiones éticas,  de acuerdo a los propósitos estratégicos de la organización.<br>Implementa estrategias de comercialización, orientadas al posicionamiento de servicios de alojamiento y alimentos &amp; bebidas, considerando la comprensión y adhesión de otros, de acuerdo a las tendencias comerciales vigentes.<br>Durante el proceso formativo los alumnos de la carrera desarrollan de manera integrada a las competencias de especialidad, las competencias genéricas Trabajo en Equipo, Comunicación Oral y Escrita y Ética Profesional, además de las que constituyen el sello del titulado INACAP: Compromiso, Capacidad Emprendedora, Autogestión y Dominio de Especialidad.	
+          </ul>
+          
+        </div>
+                  
+                  </span>
+                </div>
+  
+                <script>
+                // When the user clicks on div, open the popup
+                function myFunction10() {
+                  var popup = document.getElementById("myPopup20");
+                  popup.classList.toggle("show");
+                }
+                </script>
+  
+        </div>
+            <p>
+            </p>
+          </div>
+          <div class="col-md-6 p-3">
+            <p>Equipo directivo:
+              <br>
+              <br>Director de carrera: Gabriel Leonart Tomas.
+              <br>Correo: gleonart@inacap.cl
+              <br>Teléfono: +56224722946
+              <br>
+              <br>Coordinador de carrera: Loreto Sainte-Marie Hudson.
+              <br>Correo: lsaint@inacap.cl
+              <br>Teléfono: +56224722947
+              <br>            
+      </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+            <div class="container">
+              <div class="row">
+    <div class="col-md-12">
+            <h6 class=""><b>Campo Ocupacional</b>
+              <br></h6>
+              <ul>El titulado de la carrera de Administración en Hotelería y Servicios del Instituto Profesional INACAP, está preparado para gestionar procesos operativos, administrativos y comerciales en servicios de alojamiento y alimentos & bebidas. Sus áreas de inserción laboral se relacionan con organizaciones públicas y privadas de servicio de alojamiento, restauración, entretención, centros de eventos, cruceros, catering aéreo, hotelería industrial, clínicas y hospitales, emprendimientos propios y de terceros, tanto en Chile como en el extranjero.</ul>
+          </div></div></div></div>
+
+
+
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h6 class=""><b>Admisión Primer Semestre 2020</b><br></h6><img class="img-fluid d-block" src="img/aranceladministracionhoteleriayservicios.PNG" style="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br>
+
+    <div >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <h6 class="text-left"><a href="http://www.inacap.cl/web/pdf_mallas/05_hotuga/AHS-AHS-1_Hotuga_IP.pdf"><b>Revisar Malla Administración en Hotelería y Servicios&nbsp;</b></a><br></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+          <!--HOTELERIA Y SERVICIOS-->
+  
+  
+  
+  
+  
+    
+          <div class="py-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-center">
+             <h1>Hotelería y Servicios</h1><br><br> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 p-3">
+                  <p>Impartido por: <b>Centro de Formación Técnica INACAP</b>
+                    <br><br>Duración: <b>4 Semestres.</b>
+                    <br>Acreditación: <b>5 Años (Diciembre 2022).</b>
+                    <br>Título: <b>Técnico de Nivel Superior en Hotelería y Servicios.</b>
+                    <br>Jornada: <b>Diurna.</b>
+                    <br>Continuidad de estudios: <b>Administración en Hotelería y Servicios.</b>
+                    <br>Beneficios: <b>Adscrita a gratuidad.</b>
+                     <br>
+                     <br>Se requiere para el transcurso de la carrera:
+                     <br><b>-1 Uniforme de servicio.
+                     <br>-1 Uniforme de gastronomía. <br><br>
+                     <div> <a href="https://drive.google.com/file/d/1uh8eCU72R6viKqpiVLp77oJL1u41iZXm/view?usp=sharing" >Revisar para ver Instructivo Orden, Higiene y Seguridad Carreras de Gastronomía y Hotelería - Talleres de Especialidad</a></div>
+<br>  
+                    </p>
+              
+            
+              
+           <div id="perfilegreso">
+                            <h3>Perfíl de egreso</h3>
+        
+                      <div class="popup" onclick="myFunction100()">Click para ver perfíl de egreso.
+                        <span class="popuptext" id="myPopup200">
+                        <div>
+                   <ul>
+       El Técnico de Nivel Superior en Hotelería y Servicios del Centro de Formación Técnica INACAP, se desempeña en la supervisión de check in , check out , asistencia al huésped, housekeeping , operación de habitaciones, preparación básica de alimentos y bebidas. Además ejecuta tareas de atención al cliente, venta de productos y servicios, registros, inventario, cuadratura y cierre de caja, confección de horarios y distribución de tareas. Su desempeño se centra en la atención al cliente y comunicación en su lengua materna e idioma inglés, en el aseguramiento de una experiencia satisfactoria, incorporando patrimonio, respetando multiculturalidad, basada en un servicio de excelencia y las competencias Sello del titulado de INACAP.<br><br>Se desempeña competentemente en las siguientes áreas, en concordancia con las requeridas para el ejercicio de su profesión:<br><br>Área de Desempeño: Procesos Operacionales de Servicios de Alojamiento y Alimentos &amp; Bebidas:<br><br>Supervisa procesos operativos de servicios de alojamiento trabajando de manera colaborativa y de acuerdo a normativa vigente y estándares de la empresa.<br><br>Supervisa procesos operativos de servicios de alimentos &amp; bebidas, trabajando de manera colaborativa, de acuerdo a normativa vigente y estándares de la empresa.<br><br>Provee una experiencia satisfactoria al cliente en servicios de alojamiento y alimentos &amp; bebidas, a través, de un intercambio de información en su lengua materna e idioma inglés, considerando protocolos de excelencia de la empresa.<br><br>Área de Desempeño: Gestión Administrativa de Servicios de Alojamiento y Alimentos &amp; Bebidas:<br><br>Realiza procesos administrativos en las áreas de reservas, recepción, housekeeping y alimentos &amp; bebidas, actuando de manera ética en el cumplimiento de los estándares de la empresa y normativa vigente.<br><br>Realiza tareas de comercialización de servicios de alojamiento y alimentos &amp; bebidas, a través, de un intercambio de información, orientadas al cumplimiento de políticas y estrategias de venta.<br><br>Durante el proceso formativo los alumnos de la carrera desarrollan de manera integrada a las competencias de especialidad, las competencias genéricas Trabajo en Equipo, Comunicación Oral y Escrita y Ética Profesional, además de las que constituyen el sello del titulado INACAP: Compromiso, Capacidad Emprendedora, Autogestión y Dominio de Especialidad.         </ul>
+                
+              </div>
+                        
+                        </span>
+                      </div>
+        
+                      <script>
+                      // When the user clicks on div, open the popup
+                      function myFunction100() {
+                        var popup = document.getElementById("myPopup200");
+                        popup.classList.toggle("show");
+                      }
+                      </script>
+        
+              </div>
+                  <p>
+                  </p>
+                </div>
+                <div class="col-md-6 p-3">
+                        <p>Equipo directivo:
+                          <br>
+                          <br>Director de carrera: Gabriel Leonart Tomas.
+                          <br>Correo: gleonart@inacap.cl
+                          <br>Teléfono: +56224722946
+                          <br>
+                          <br>Coordinador de carrera: Loreto Sainte-Marie Hudson.
+                          <br>Correo: lsaint@inacap.cl
+                          <br>Teléfono: +56224722947
+                          <br>            
+                  </p>
+                      </div>
+              </div>
+            </div>
+          </div>
+
+<div>
+          <div class="container">
+                <div class="row">
+          <div class="col-md-12">
+                <h6 class=""><b>Campo Ocupacional</b>
+                  <br></h6>
+                  <ul>El titulado de la carrera de Técnico de Nivel Superior en Hotelería y Servicios del Centro de Formación Técnica INACAP, está preparado para realizar funciones de ejecución y supervisión asociadas a las áreas de: recepción, housekeeping y alimentos & bebidas. Además apoya la gestión en los departamentos de comercialización, logística, costos, registros de ventas y organización de equipos de trabajo. Sus áreas de inserción laboral se relacionan con organizaciones públicas y privadas de servicio de alojamiento, restauración, entretención, centros de eventos, emprendimientos propios, tanto en Chile como en el extranjero.</ul>
+                        </div>
+                    </div>
+                </div></div>
+            
+
+          <div class="py-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <h6 class=""><b>Admisión Primer Semestre 2020</b><br></h6><img class="img-fluid d-block" src="img/arancelhoteleriayservicio.PNG" style="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <br><br>
+
+          <div >
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                    <h6 class="text-left"><a href="http://www.inacap.cl/web/pdf_mallas/05_hotuga/HS-HS0-1_Hotuga_CFT.pdf"><b>Revisar Malla Hotelería y Servicios&nbsp;</b></a><br></h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+  
+          
+          <!--FIN DE CARRERA-->
+  
+  <br><br>
+     
+
+
+
+
+
+  <div class="py-5 text-white" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://static.pingendo.com/cover-bubble-dark.svg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center align-self-center p-4">
+          <p class="mb-5"> <strong>INACAP Sede Apoquindo<strong> <br>Dirección: Apoquindo 7282, Las Condes<br> Teléfono: (56) 224722500<br> Mail: apoquindo@inacap.cl<br></strong></strong></p><strong><strong>
+<div class="row">
+                <div class="col-md-12 d-flex align-items-center justify-content-around"> <a href="#">
+                    <i class="d-block fa fa-facebook-official text-light fa-lg mx-2"></i>
+                  </a> <a href="#">
+                    <i class="d-block fa fa-instagram text-light fa-lg mx-2"></i>
+                  </a>   <a href="#">
+                    <i class="d-block fa fa-twitter text-light fa-lg ml-2"></i>
+                  </a> </div>
+              </div>
+            </strong></strong>
+        </div><strong><strong>
+            <div class="col-md-6 p-0"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.5755200761105!2d-70.5555654838491!3d-33.40823690273494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cec02ea4cebf%3A0x29dd711ed6294ee3!2sInacap+Apoquindo!5e0!3m2!1ses!2scl!4v1540305071437" width="400" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe></div>
+          </strong></strong>
+      </div><strong><strong>
+        </strong></strong>
+    </div><strong><strong>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </strong></strong>
+  </div>
+  
+</body>
+
+</html>

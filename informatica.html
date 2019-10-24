@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="css/theme.css" type="text/css">
+  <link rel="stylesheet" href="css/estilo.css" type="text/css">
+  <title>Informática y Telecomunicaciones</title>
+  
+  
+
+  
+  
+  <!--ETIQUETA POPUP-->
+  <style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 1000px;
+  background-color: #555;
+  color: #fff;
+  text-align: left;
+  border-radius: 10px;
+ margin-left: 5px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin: 5px;
+}
+
+/* Popup arrow 
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+*/
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container"> <a class="navbar-brand" href="index.html"> <img width="200px	" height="90px" src="img/logo-blanco.png">
+      </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar11">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar11">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"> <a class="nav-link" href="index.html">Inicio</a> </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"> <a class="nav-link" href="admin.html">Administración y Negocios</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="informatica.html">Informática y Telecomunicaciones</a> </li>
+            <ul id="menu">
+                <li class="nav-item">Hotelería, turismo y gastronomía
+                    <ul>
+                      <li><a href="hoteleria.html">Hotelería</a></li>
+                      <li><a href="turismo.html">Turismo</a></li>
+                      <li><a href="gastronomia.html">Gastronomía</a></li>
+                    </ul>
+                    </li>
+            </ul>   
+            <li class="nav-item"> <a class="nav-link" href="disenocomunicacion.html">Diseño & Comunicación</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="salud.html">Salud</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="py-5 text-center text-white h-100 align-items-center d-flex" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(img/header.jpg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="mx-auto col-lg-8 col-md-10">
+          <h1 class="display-3 mb-4">Informática y Telecomunicaciones</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Ingeniería en informática</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 p-3">
+          <p>Impartido por: <b>Universidad tecnológica de Chile INACAP.</b> <br>
+            <br>Requisito de ingreso: 
+            <br><b>-Rendir evaluación diagnóstica de Matemáticas 
+            <br>-Obtener un puntaje de aprobación igual o superior a 40%.</b>
+            <br>
+            <br>Grado Académico:<b> Licenciado en Informática.</b>
+            <br>Duración: <b>8 Semestres.</b>
+            <br>Acreditación: <b>6 Años (Marzo 2024).</b>
+            <br>Título: <b>Ingeniero en Informática.</b>
+            <br>Jornada: <b>Diurna.</b>
+            <br>Beneficios:<b> No adscrita a la gratuidad.</b><br> </p>
+            <br>
+		  
+			
+		  		  <div id="perfilegreso">
+										<h3>Perfíl de egreso</h3>
+
+							<div class="popup" onclick="myFunction1()">Click para ver perfíl de egreso.
+							  <span class="popuptext" id="myPopup">
+							  <div>
+			     <ul>
+				El Ingeniero en Informática de la Universidad Tecnológica de Chile INACAP, está capacitado para gestionar proyectos de tecnologías de información así como también diseñar y desarrollar soluciones informáticas integradas para satisfacer las necesidades empresariales actuales y futuras, trabajando de manera colaborativa , comprometida  e integrando  diversas herramientas y metodologías , para  el ejercicio de su labor. Además, es capaz de desarrollar proyectos en el ámbito de la innovación y el emprendimiento  en el contexto de sus competencias.<br>El titulado de la carrera recibe el grado académico de licenciado en Informática una vez que ha logrado la competencia 'desarrollo de enfoques alternativos de análisis y rediseño de procesos, alineando la estrategia de tecnologías de información con la del negocio'.<br><br>El titulado de la carrera Ingeniería en Informática de la Universidad Tecnológica de Chile lNACAP desarrolla las siguientes competencias:<br><br>Área de Desempeño I: DESARROLLO DE SOLUCIONES<br><br>1. Construye soluciones informáticas que satisfagan las necesidades del negocio, sistematizando la información  necesaria. (SFIA: DESN, 4; SINT, 4; METL, 4)<br>2. Gestiona proyectos de tecnologías de información de acuerdo a las necesidades del negocio, fundamentando sus decisiones  a partir del análisis crítico. (SFIA: REQM, 4; BUAN, 4; PRMG 4)<br><br>Área de Desempeño II: GESTIÓN DE SERVICIOS<br><br>3. Administra la infraestructura de tecnologías de información para mantener la seguridad y operación de los servicios, aplicando las mejores prácticas en las soluciones  propuestas. (SFIA: ITOP, 3; ITMG, 5, SCTY, 4 ).<br><br>4. Administra el  cumplimiento de los acuerdos de niveles de servicios claves, retroalimentando  a las partes interesadas sobre los antecedentes atingentes a su ámbito de acción. (SFIA: ITCM, 4; RLMT, 5)<br><br>Área de Desempeño III: ESTRATEGIA Y ARQUITECTURA<br><br>5. Diseña soluciones Informáticas integrales basadas en el desarrollo de estructuras escalables, mejorando el desempeño y la interoperabilidad de los sistemas y fundamentando  sus propuestas de solución. (SFIA: ARCH, 5)<br><br>6. Desarrolla enfoques alternativos de análisis y rediseño de procesos, alineando la estrategia de tecnologías de información con la del negocio, a partir del análisis crítico . (SFIA: BPRE, 5; STPL, 5)<br>
+			
+				</ul>
+				
+			</div>
+							  
+							  </span>
+							</div>
+
+							<script>
+							// When the user clicks on div, open the popup
+							function myFunction1() {
+							  var popup = document.getElementById("myPopup");
+							  popup.classList.toggle("show");
+							}
+							</script>
+
+		  </div>
+          <p>
+          </p>
+        </div>
+        <div class="col-md-6 p-3">
+          <p>Equipo directivo:
+            <br>
+            <br>Director de carrera:<b> Ricardo Martínez Flores.</b>
+            <br>Correo: <b>r_martinez@inacap.cl</b>
+            <br>Teléfono: <b>+56224722564</b>
+            <br>
+            <br>Coordinador de carrera: <b>Rodrigo Andonaegui Castro.</b>
+            <br>Correo: <b>randonaegui@inacap.cl</b>
+            <br>Teléfono: <b>+56224722566</b>
+            <br>
+            <br>Coordinador de especialidad: <b>Mauricio Hinojoza Vega.</b>
+            <br>Correo: <b>mhinojoza@inacap.cl</b>
+            <br>Teléfono: <b>+56224722543</b>
+            <br>
+    </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h6 class=""><b>Campo Ocupacional</b>
+            <br></h6>
+            <ul>El Ingeniero en Informática está preparado para desempeñarse en todo tipo de proyectos informáticos de implementación e integración y como miembro de un equipo multidisciplinario. Además, podrá realizar labores en empresas productivas y/o de servicios que requieran sistemas informáticos, para llevar adelante en forma eficiente sus procesos de negocios, o bien, como prestador de servicios independiente.</ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<br>
+
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h6 class=""><b>Admisión Primer Semestre 2020</b><br><br></h6><img class="img-fluid d-block" src="img/arancelinformatica.PNG" style="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <br><br>
+
+  <div >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <h6 class="text-left"><a href="http://www.inacap.cl/web/pdf_mallas/07informatica_y_telecomunicaciones/T60-T60-9_Informatica_U.pdf"><b>Revisar Malla Ingeniería en informática&nbsp;</b></a><br></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+  <div class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 p-3">
+          <div class="card"></div>
+          <h1 class="text-center"><br>Analísta Programador</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <p>Impartido por: <b>Centro de Formación Técnica INACAP.</b>
+                <br>
+                <br>Requisito de ingreso: <b>Rendir evaluación diagnóstica de Matemáticas y obtener un puntaje de aprobación igual o superior a uh 40%.</b>
+                <br>Título: <b>Técnico de nivel Superior Analista Programador.</b>
+                <br>Duración: <b>5 Semestres.</b>
+                <br>Acreditación: <b>6 Años (Marzo 2024).</b>
+                <br>Jornada: <b>Diurna-Vespertina.</b>
+                <br>Continuidad de estudios: <b>No articula a Ingeniería en informática.</b>
+                <br>Beneficios: <b>Adscrita a gratuidad.</b> 
+                <br>
+               </p>
+			  
+			  
+			  		  <div id="perfilegreso">
+										<h3>Perfíl de egreso</h3>
+
+							<div class="popup" onclick="myFunction2()">Click para ver perfíl de egreso.
+							  <span class="popuptext" id="myPopupXX">
+							  <div>
+			     <ul>
+				El Analista Programador del Centro de Formación Técnica de INACAP, está capacitado para desarrollar aplicaciones informáticas y trabajar de manera colaborativa  y comprometida  como parte de un equipo multidisciplinario en el desarrollo de proyectos informáticos globales. Su formación le permite además efectuar labores de soporte y mantención de las aplicaciones y de los sistemas computacionales. También, es capaz de desarrollar proyectos de mediana escala en el ámbito de la innovación y el emprendimiento  de soluciones informáticas, utilizando estrategias de aprendizaje  predefinidas.<br><br>El titulado de la carrera Analista Programador del CFT INACAP desarrolla las siguientes competencias:<br><br>Área de Desempeño I: DESARROLLO DE SOLUCIONES<br><br>1. Desarrolla aplicaciones informáticas de acuerdo a necesidades del negocio, elaborando la documentación de cada etapa. (SFIA: PROG, 3; SINT, 3; DESN, 3)<br>2. Propone mejoras a los procesos globales automatizados y no automatizados de la organización levantando requerimientos con las partes interesadas. (SFIA: REQM, 3; BUAN, 3).<br><br>Área de Desempeño II: GESTIÓN DE SERVICIOS<br><br>3. Provee soporte y mantención a las aplicaciones informáticas y a los sistemas computacionales, utilizando software e instrumentos de gestión y fundamentando la solución implementada. (SFIA: HSIN, 3; ASUP, 3)<br>4. Administra servicios y recursos de datos, manteniendo la integridad, disponibilidad y confidencialidad de la Información, generando informes de gestión de calidad del servicio. (SFIA: DBDS, 3; DBAD, 3)
+			
+				</ul>
+				
+			</div>
+							  
+							  </span>
+							</div>
+
+							<script>
+							// When the user clicks on div, open the popup
+							function myFunction2() {
+							  var popup = document.getElementById("myPopupXX");
+							  popup.classList.toggle("show");
+							}
+							</script>
+
+		  </div>
+			  
+			  
+            </div>
+            <div class="col-md-6 p-3">
+                <p>Equipo directivo:
+                  <br>
+                  <br>Director de carrera:<b> Ricardo Martínez Flores.</b>
+                  <br>Correo: <b>r_martinez@inacap.cl</b>
+                  <br>Teléfono: <b>+56224722564</b>
+                  <br>
+                  <br>Coordinador de carrera: <b>Rodrigo Andonaegui Castro.</b>
+                  <br>Correo: <b>randonaegui@inacap.cl</b>
+                  <br>Teléfono: <b>+56224722566</b>
+                  <br>
+                  <br>Coordinador de especialidad: <b>Mauricio Hinojoza Vega.</b>
+                  <br>Correo: <b>mhinojoza@inacap.cl</b>
+                  <br>Teléfono: <b>+56224722543</b>
+                  <br>
+          </p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h6 class=""><b>Campo Ocupacional</b>
+            <br></h6>
+            <ul>El Analista Programador está preparado para desempeñarse en empresas productivas y/o de servicios, así como también consultoras que requieran desarrollar y/o mantener sistemas informáticos en distintas plataformas, para llevar adelante en forma eficiente sus procesos productivos y de negocios. También puede realizar prestación de servicios de manera independiente.</ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <div class="center">
+    <div class="container">
+  </div>
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h6 class=""><b>Admisión Primer Semestre 2020</b><br><br></h6><img class="img-fluid d-block" src="img/arancelanalista.PNG" style="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <div >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <h6 class="text-left"><a href="http://www.inacap.cl/web/pdf_mallas/07informatica_y_telecomunicaciones/B5-B50-11_Informatica_CFT.pdf"><b>Revisar Malla Analista Programador&nbsp;</b></a><br></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br><br>
+
+  <div class="py-5 text-white" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://static.pingendo.com/cover-bubble-dark.svg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center align-self-center p-4">
+          <p class="mb-5"> <strong>INACAP Sede Apoquindo<strong> <br>Dirección: Apoquindo 7282, Las Condes<br> Teléfono: (56) 224722500<br> Mail: apoquindo@inacap.cl<br></strong></strong></p><strong><strong>
+<div class="row">
+                <div class="col-md-12 d-flex align-items-center justify-content-around"> <a href="#">
+                    <i class="d-block fa fa-facebook-official text-light fa-lg mx-2"></i>
+                  </a> <a href="#">
+                    <i class="d-block fa fa-instagram text-light fa-lg mx-2"></i>
+                  </a>   <a href="#">
+                    <i class="d-block fa fa-twitter text-light fa-lg ml-2"></i>
+                  </a> </div>
+              </div>
+            </strong></strong>
+        </div><strong><strong>
+            <div class="col-md-6 p-0"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.5755200761105!2d-70.5555654838491!3d-33.40823690273494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cec02ea4cebf%3A0x29dd711ed6294ee3!2sInacap+Apoquindo!5e0!3m2!1ses!2scl!4v1540305071437" width="400" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe></div>
+          </strong></strong>
+      </div><strong><strong>
+        </strong></strong>
+    </div><strong><strong>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </strong></strong>
+  </div>
+  
+</body>
+
+</html>

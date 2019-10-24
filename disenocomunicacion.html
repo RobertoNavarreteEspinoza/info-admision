@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="css/theme.css" type="text/css">
+  <link rel="stylesheet" href="css/estilo.css" type="text/css">
+
+  
+  
+  <!--ETIQUETA POPUP-->
+  <style>
+      /* Popup container - can be anything you want */
+      .popup {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      
+      /* The actual popup */
+      .popup .popuptext {
+        visibility: hidden;
+        width: 1000px;
+        background-color: #555;
+        color: #fff;
+        text-align: left;
+        border-radius: 10px;
+       margin-left: 5px;
+        padding: 8px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin: 5px;
+      }
+      
+      /* Popup arrow 
+      .popup .popuptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+      }
+      
+      */
+      
+      /* Toggle this class - hide and show the popup */
+      .popup .show {
+        visibility: visible;
+        -webkit-animation: fadeIn 1s;
+        animation: fadeIn 1s;
+      }
+      
+      /* Add animation (fade in the popup) */
+      @-webkit-keyframes fadeIn {
+        from {opacity: 0;} 
+        to {opacity: 1;}
+      }
+      
+      @keyframes fadeIn {
+        from {opacity: 0;}
+        to {opacity:1 ;}
+      }
+      </style>
+
+  <title>Diseño & Comunicación</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container"> <a class="navbar-brand" href="index.html"> <img width="200px	" height="90px" src="img/logo-blanco.png">
+      </a> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar11">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar11">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"> <a class="nav-link" href="index.html">Inicio</a> </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"> <a class="nav-link" href="admin.html">Administración y Negocios</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="informatica.html">Informática y Telecomunicaciones</a> </li>
+            <ul id="menu">
+                <li class="nav-item">Hotelería, turismo y gastronomía
+                    <ul>
+                      <li><a href="hoteleria.html">Hotelería</a></li>
+                      <li><a href="turismo.html">Turismo</a></li>
+                      <li><a href="gastronomia.html">Gastronomía</a></li>
+                    </ul>
+                    </li>
+            </ul>   
+            <li class="nav-item"> <a class="nav-link" href="disenocomunicacion.html">Diseño & Comunicación</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="salud.html">Salud</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="py-5 text-center text-white h-100 align-items-center d-flex" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(img/header.jpg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+    <div class="container py-5">
+      <div class="row">
+        <div class="mx-auto col-lg-8 col-md-10">
+          <h1 class="display-3 mb-4">Diseño & Comunicación<br></h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="py-5">
+      <div class="container">
+        <div class="row">
+         
+              <div class="col-lg-12 p-3">
+                
+                <h1 class="text-center">Diseño & Producción Gráfica</h1>
+                <div class="row">
+                  <div class="col-md-6"> <br>
+                    <p>Impartido por: <b>Centro de Formación Técnica.</b> <br>
+                      <br>Título: <b>Técnico de nivel Superior en Diseño Gráfico.</b>
+                      <br>Duración: <b>4 Semestres.</b>
+                      <br>Acreditación: <b>7 Años (Enero 2025).</b>
+                      <br>Jornada: <b>Diurna&nbsp;</b>
+                      <br>Beneficios: <b>Adscrita a gratuidad.</b>
+                      
+                      <br></p>
+
+                      <div id="perfilegreso">
+                          <h3>Perfíl de egreso</h3>
+      
+                    <div class="popup" onclick="myFunction99()">Click para ver perfíl de egreso.
+                      <span class="popuptext" id="myPopup99">
+                      <div>
+                 <ul>
+            
+                    El egresado de la carrera de Diseño &amp; Producción Gráfica del Centro de Formación Técnica INACAP está capacitado para implementar proyectos de diseño gráfico y proponer soluciones creativas en el ámbito de la Comunicación Visual, desempeñándose en el diseño, el desarrollo y la implementación de producción gráfica, para agregar valor a productos y servicios, a través de metodologías de creatividad, con foco en el usuario, utilizando nuevas tecnologías y medios digitales, trabajando de manera colaborativa en equipos de trabajo.<br>El egresado de la carrera de Diseño &amp; Producción Gráfica está en condiciones de desarrollar las siguientes competencias:<br><li> Diseña proyectos de Producción Gráfica, proponiendo soluciones creativas que responden a los requerimientos del cliente, las necesidades del usuario y las condiciones del mercado, para agregar valor a productos y servicios, aplicando metodologías de creatividad.<br><br></li><li>Produce piezas de Diseño Gráfico, de acuerdo a condiciones técnicas, tecnológicas y presupuestarias según los requerimientos del cliente, las necesidades del usuario y las condiciones del mercado.<br><br></li><li>Coordina proyectos de Producción Gráfica, colaborando en equipos de trabajo, administrando tiempos de producción, equipos tecnológicos y recursos humanos disponibles.           </ul>
+              
+            </div>
+                      
+                      </span>
+                    </div>
+      
+                    <script>
+                    // When the user clicks on div, open the popup
+                    function myFunction99() {
+                      var popup = document.getElementById("myPopup99");
+                      popup.classList.toggle("show");
+                    }
+                    </script>
+      
+            </div>
+
+                  </div>
+                  <div class="col-md-6 p-3">
+                      <p>Equipo directivo: <br>
+                      <br>Director de Carrera: <b>María Soledad Espinosa Oyarzún.</b>
+                      <br>Correo: <b>mespinosao@inacap.cl&nbsp;</b>
+                      <br>Teléfono: <b>+56224722554</b><br>
+                      <br>Coordinador de Carrera: <b>Bernardita Chamorro Castro.</b>
+                      <br>Correo: <b>bchamorro@inacap.cl&nbsp;</b>
+                      <br>Teléfono: <b>+56224722556</b> <br> 
+                      <br>Coordinador de Especialidad: <b>Maria Teresa Yunis Jacir </b>
+                      <br>Correo: <b>myunis@inacap.cl </b>
+                      <br> Teléfono: <b>+56224722590</b>
+                      </p>
+                    </div>
+                </div>
+              </div>
+            </div>
+         
+      </div>
+    </div>
+  
+  
+  
+    <div>
+        <div class="container">
+          <div class="row">
+  <div class="col-md-12">
+        <h6 class=""><b>Campo Ocupacional</b>
+          <br></h6>
+          <ul>El titulado de la carrera de Diseño & Producción Gráfica del Centro de Formación Técnica INACAP podrá desempeñarse en el área de Diseño & Comunicación, participando en el diseño, el desarrollo, la producción e implementación de proyectos de producción gráfica.
+  
+              Además podrá trabajar en empresas y/o instituciones del ámbito público o privado; oficinas de diseño de productos y servicios, de branding, de merchandising y de packaging; en agencias de publicidad, de medios audiovisuales, digitales y de comunicaciones; y en consultoras de marketing, o bien ejercer de manera independiente como freelance.
+              </ul>
+      </div></div></div></div>
+  
+  
+  
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+           
+                  <div class="col-md-12">
+                    <div class="col-md-12">
+                      <div class="col-md-12">
+                        <h6 class="text-left"><b>Admisión Primer Semestre 2020</b><br></h6><img class="img-fluid d-block" src="img/aranceldisenoyproducciongrafica.PNG" style="">
+                      </div>
+                    </div>
+                  </div>
+         
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <div >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <h6 class="text-left"><a href="http://www.inacap.cl/web/pdf_mallas/03_diseno_y_comunicacion/DPG-DPG-1_Diseno_CFT.pdf"><b>Revisar Malla Diseño & Producción Gráfica&nbsp;</b></a><br></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+  <div class="py-5" style="">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 p-3">
+            <div class="card"></div><br>
+            <h1 class="text-center">Diseño Web & Mobile</h1> <br>
+            <div class="row">
+              <div class="col-md-6">
+                  <br>
+                  <p>Impartido por: <b>Centro de Formación Técnica INACAP.</b> <br>
+                  <br>Título: <b>Técnico de Nivel Superior en Diseño Web &amp; Mobile.</b>
+                  <br>Duración: <b>4 Semestres.</b>
+                  <br>Jornada:<b> Diurna - Vespertina.</b>
+                  <br>Beneficios: <b>Adscrita a gratuidad.</b>
+                  <br></p>
+
+                  <div id="perfilegreso">
+                      <h3>Perfíl de egreso</h3>
+  
+                <div class="popup" onclick="myFunctionARK()">Click para ver perfíl de egreso.
+                  <span class="popuptext" id="myPopupARK">
+                  <div>
+             <ul>
+                El egresado de la carrera Diseño Web &amp; Mobile del Centro de Formación Técnica INACAP está capacitado para desarrollar proyectos de diseño y producción en medios digitales y proponer soluciones creativas en el ámbito de la Comunicación Digital, desempeñándose en el  diseño, el desarrollo, la programación y la implementación de proyectos web y mobile, para agregar valor a productos y servicios, a través de metodologías de creatividad y del uso de TIC, centradas en la experiencia de usuario, utilizando nuevas tecnologías, canales y plataformas digitales, trabajando de manera colaborativa en equipos de trabajo.<br><br>El egresado de la carrera de Diseño Web &amp; Mobile está en condiciones de desarrollar las siguientes competencias:<br><br><li>Diseña proyectos web y mobile, proponiendo soluciones creativas que responden a los requerimientos del cliente, las necesidades del usuario y las condiciones del mercado, para agregar valor a productos y servicios, enfocado en la experiencia del usuario, aplicando metodologías de creatividad.<br></li><li>Desarrolla interfaces web y mobile, que responden a los requerimientos del cliente, las necesidades del usuario y las condiciones del mercado, para producir y comunicar soluciones de web y mobile, utilizando las tecnologías y estándares de la información y comunicación, enfocados en la experiencia del usuario.<br></li><li>Coordina procesos en la implementación de proyectos web y mobile, dando soluciones de interfaz y de comunicación web, utilizando diversas fuentes de información y evaluando sus resultados.<br>   </ul>
+          
+        </div>
+                  
+                  </span>
+                </div>
+  
+                <script>
+                // When the user clicks on div, open the popup
+                function myFunctionARK() {
+                  var popup = document.getElementById("myPopupARK");
+                  popup.classList.toggle("show");
+                }
+                </script>
+  
+        </div>
+              </div>
+              <div class="col-md-6 p-3">
+                  <p>Equipo directivo: <br>
+                  <br>Director de Carrera: <b>María Soledad Espinosa Oyarzún.</b>
+                  <br>Correo: <b>mespinosao@inacap.cl&nbsp;</b>
+                  <br>Teléfono: <b>+56224722554</b><br>
+                  <br>Coordinador de Carrera: <b>Bernardita Chamorro Castro.</b>
+                  <br>Correo: <b>bchamorro@inacap.cl&nbsp;</b>
+                  <br>Teléfono: <b>+56224722556</b> <br> 
+                  <br>Coordinador de Especialidad: <b>Maria Teresa Yunis Jacir </b>
+                  <br>Correo: <b>myunis@inacap.cl </b>
+                  <br> Teléfono: <b>+56224722590</b>
+                  </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div>
+        <div class="container">
+          <div class="row">
+  <div class="col-md-12">
+        <h6 class=""><b>Campo Ocupacional</b>
+          <br></h6>
+          <ul>El titulado de la carrera Diseño Web & Mobile del Centro de Formación Técnica INACAP podrá desempeñarse en el área de diseño y comunicación, participando en el diseño, la programación, la implementación y mantención de plataformas de proyectos de Diseño web y mobile.
+              Además, podrá trabajar en empresas y/o instituciones del ámbito público o privado; oficinas de diseño, de marketing, agencias de medios y de publicidad; en productoras audiovisuales, en departamentos de diseño, de comunicaciones, y de desarrollo y programación digital de empresas, o bien ejercer de manera independiente como freelance.</ul>
+      </div></div></div></div>
+  
+  
+  
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h6 class="text-left"><b>Admisión Primer Semestre 2020</b><br></h6><img class="img-fluid d-block" src="img/aranceldisenowebymobile.PNG" style="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <div >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <h6 class="text-left"><a href="http://www.inacap.cl/web/pdf_mallas/03_diseno_y_comunicacion/DWM-DWM-2_Diseno_CFT.pdf"><b>Revisar Malla Diseño Web & Mobile&nbsp;</b></a><br></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+ <br>   <div class="card"></div>
+      <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h1>Diseño Gráfico Profesional</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 p-3">
+          <p>Impartido por: <b>Instituto Profesional INACAP.</b> <br>
+            <br>Título: <b>Diseñador Gráfico Profesional.</b>
+            <br>Duración: <b>8 Semestres.</b>
+            <br>Acreditación: <b>6 Años (Diciembre 2022).</b>
+            <br>Jornada: <b>Diurna.</b>
+            <br>Beneficios: <b>Adscrita a gratuidad.</b></p>
+
+            <div id="perfilegreso">
+                <h3>Perfíl de egreso</h3>
+
+          <div class="popup" onclick="myFunctionARK2()">Click para ver perfíl de egreso.
+            <span class="popuptext" id="myPopupARK2">
+            <div>
+       <ul>
+          El egresado de la carrera de Diseño Gráfico Profesional del Instituto Profesional INACAP está capacitado para desarrollar proyectos de diseño y dar soluciones creativas en el ámbito de la Comunicación Visual, desempeñándose en el diseño, el desarrollo y la producción, la dirección y gestión de proyectos de diseño gráfico, para crear valor en productos y servicios, a través de metodologías de creatividad e innovación, centrados en la experiencia del usuario, utilizando nuevas tecnologías y medios digitales, trabajando en equipo, respetando el medio ambiente y actuando de manera ética y colaborativa.<br><br>El egresado de la carrera de Diseño Gráfico Profesional está en condiciones de desarrollar las siguientes competencias:<br><li>Diseña proyectos de Comunicación Visual, proponiendo soluciones creativas que responden a los requerimientos del cliente, las necesidades del usuario y las condiciones del mercado, para crear valor en productos y servicios, aplicando metodologías de creatividad e innovación.<br></li><li>Produce piezas de diseño, de acuerdo a condiciones técnicas, tecnológicas y presupuestarias, según  los requerimientos del cliente, las necesidades del usuario y las condiciones del mercado, resolviendo problemas de carácter multidisciplinario e innovando en el uso de nuevas tecnologías y medios digitales.<br></li><li>Gestiona proyectos de Comunicación Visual, liderando equipos de trabajo, coordinando tiempos de producción, equipos tecnológicos y recursos humanos disponibles, implementando soluciones creativas en productos y servicios.
+    </ul>
+    
+  </div>
+            
+            </span>
+          </div>
+
+          <script>
+          // When the user clicks on div, open the popup
+          function myFunctionARK2() {
+            var popup = document.getElementById("myPopupARK2");
+            popup.classList.toggle("show");
+          }
+          </script>
+
+  </div>
+
+          <p>
+          </p>
+        </div>
+
+        <div class="col-md-6 p-3">
+            <p>Equipo directivo: <br>
+            <br>Director de Carrera: <b>María Soledad Espinosa Oyarzún.</b>
+            <br>Correo: <b>mespinosao@inacap.cl&nbsp;</b>
+            <br>Teléfono: <b>+56224722554</b><br>
+            <br>Coordinador de Carrera: <b>Bernardita Chamorro Castro.</b>
+            <br>Correo: <b>bchamorro@inacap.cl&nbsp;</b>
+            <br>Teléfono: <b>+56224722556</b> <br> 
+            <br>Coordinador de Especialidad: <b>Maria Teresa Yunis Jacir </b>
+            <br>Correo: <b>myunis@inacap.cl </b>
+            <br>Teléfono: <b>+56224722590</b>
+            </p>
+          </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+            <h6 class=""><b>Campo Ocupacional</b></h6>
+            <br>
+
+              <ul>El titulado de la carrera de Diseño Gráfico Profesional del Instituto Profesional INACAP podrá desempeñarse en el área del diseño y la comunicación, participando en el diseño, el desarrollo, la producción, la dirección y la gestión de proyectos de diseño gráfico.
+
+                  Además, podrá trabajar en empresas y/o instituciones del ámbito público o privado; oficinas de diseño de productos y servicios, de branding, de merchandising y de packaging; en agencias de publicidad, de comunicaciones, digitales, de medios y audiovisuales; y en consultoras de marketing, o bien ejercer de manera independiente como freelance y/o emprendedor.</ul>
+    </div></div></div></div>
+
+
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h6 class=""><b>Admisión Primer Semestre 2020</b><br></h6><img class="img-fluid d-block" src="img/aranceldisenograficoprofesional.PNG" style="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <br><br><br>
+
+  <div >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <h6 class="text-left"><a href="http://www.inacap.cl/web/pdf_mallas/03_diseno_y_comunicacion/A7-A70-6_Diseno_IP.pdf"><b>Revisar Malla Diseño Gráfico Profesional&nbsp;</b></a><br></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+  <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 p-3">
+             <br> <div class="card"></div> <br>
+            <h1 class="text-center">Diseño & Producción de Moda</h1> <br>
+            <div class="row">
+              <div class="col-md-6">
+                Impartido por: <b>Centro de Formación Técnica INACAP.</b> <br>
+                  <br>Título: <b>Técnico de Nivel Superior en Diseño y Producción de Moda.</b>
+                  <br>Duración: <b>4 Semestres.</b>
+                  <br>Jornada: <b>Diurna - Vespertina.</b>
+                  <br>Beneficios: <b>Adscrita a gratuidad.</b>
+                  <br>
+                  <br>
+                  <div id="perfilegreso">
+                      <h3>Perfíl de egreso</h3>
+  
+                <div class="popup" onclick="myFunctionARK3()">Click para ver perfíl de egreso.
+                  <span class="popuptext" id="myPopupARK3">
+                  <div>
+             <ul>
+                El egresado de la carrera de Diseño &amp; Producción de Moda del Centro de Formación Técnica INACAP, está capacitado para diseñar proyectos de moda y proponer soluciones creativas en el ámbito de la producción industrial,  desempeñándose en el diseño, moldaje, producción y administración de colecciones, para agregar valor en productos y servicios, a través de metodologías de creatividad,  con foco en el usuario,  utilizando nuevas tecnologías y medios digitales, trabajando de manera colaborativa en equipos de trabajo,  actuando de manera ética y respondiendo a estándares de producción nacionales e internacionales.  <br> <br>El egresado de la carrera de Diseño &amp;Producción Industrial de Moda del Centro de Formación Técnica INACAP:<br><br><li>Diseña líneas de productos de moda, proponiendo soluciones creativas según requerimientos técnicos y productivos del cliente,  necesidades del usuario y condiciones del mercado, para agregar valor en productos y servicios, aplicando metodologías de la creatividad y fundamentando sus propuestas. <br><br></li><li>Genera soluciones de producción industrial en proyectos de moda, de acuerdo a variables técnicas, tecnológicas y presupuestarias,  según requerimientos del cliente, necesidades del usuario y  condiciones del mercado, respondiendo a estándares de calidad nacionales e internacionales. <br><br></li><li>Administra la producción industrial de colecciones de moda, en el ámbito del retail y el diseño de autor, optimizando tiempos de producción, equipos tecnológicos, recursos disponibles, liderando equipos de trabajo.   
+          </ul>
+          
+        </div>
+                  
+                  </span>
+                </div>
+  
+                <script>
+                // When the user clicks on div, open the popup
+                function myFunctionARK3() {
+                  var popup = document.getElementById("myPopupARK3");
+                  popup.classList.toggle("show");
+                }
+                </script>
+  
+        </div>
+              </div>
+              <div class="col-md-6">
+                  <p>Equipo Directivo:<br>
+                  <br>Director de Carrera: <b>Macarena Cuadra Barturen.</b>
+                  <br>Correo: <b>mcuadra@inacap.cl&nbsp;</b>
+                  <br>Teléfono: <b>+56224722552</b> <br>
+                  <br>Coordinador de Carrera: <b>Bernardita Chamorro Castro.</b>
+                  <br>Correo: <b>bchamorro@inacap.cl&nbsp;</b>
+                  <br>Teléfono: <b>+56224722556</b> <br>
+                  <br>Coordinador de Especialidad: <b> María Yunis Jacir.</b> 
+                  <br>Correo: <b>myunis@inacap.cl</b> 
+                  <br>Teléfono: <b>+56224722928</b>               
+                  </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div>
+        <div class="container">
+          <div class="row">
+  <div class="col-md-12">
+        <h6 class=""><b>Campo Ocupacional</b>
+          <br></h6>
+          <ul>El titulado de la carrera de Diseño & Producción de Moda del Centro de Formación Técnica de INACAP, podrá desempeñarse en empresas del ámbito público y/o privado, dedicadas al diseño, producción y/o comunicación de productos Moda, tales como industrias de producción nacional e internacional, sector de retail, áreas de visual merchandisign, industrial creativas, oficinas de diseño y publicidad; o bien ejercer de manera independiente como freelance.</ul>
+      </div></div></div></div>
+  
+  
+  
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h6 class="text-left"><b>Admisión Primer Semestre 2020</b><br></h6><img class="img-fluid d-block" src="img/aranceldisenoyproducciondemoda.PNG" style="">
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+    <br><br><br>
+
+    <div >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+              <h6 class="text-left"><a href="http://www.inacap.cl/web/pdf_mallas/03_diseno_y_comunicacion/DPM-DPM-1_Diseno_CFT.pdf"><b>Revisar Malla Diseño & Producción de Moda&nbsp;</b></a><br></h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+  <div class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 p-3">
+            <div class="card"></div><br><br>
+          <h1 class="text-center">Diseño de Moda</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <p>Impartido por: <b>Instituto Profesional INACAP.</b> <br>
+                <br>Título: <b>Diseñador de Moda.</b>
+                <br>Duración: <b>8 Semestres.</b>
+                <br>Acreditación: <b>6 Años (Diciembre 2022).</b>
+                <br>Jornada: <b>Diurna.</b>
+                <br>Beneficios: <b>Adscrita a gratuidad.</b></p>
+                <br>
+                <br>
+                <div id="perfilegreso">
+										<h3>Perfíl de egreso</h3>
+
+							<div class="popup" onclick="myFunctionARK10()">Click para ver perfíl de egreso.
+							  <span class="popuptext" id="myPopupARK10">
+							  <div>
+			     <ul>
+              El Diseñador de Moda está capacitado para desarrollar proyectos de diseño de moda y dar soluciones estratégicas e innovadoras en el ámbito de la comunicación de marcas, desempeñándose en el diseño de colecciones, gestión de marcas, desarrollo de innovación productiva e investigación aplicada, para crear valor en productos y servicios, a través de la metodología de creatividad e innovación, centrado en la experiencia del usuario, utilizando nuevas tecnologías y medios digitales, trabajando de manera colaborativa en equipos interdisciplinarios, respetando el medio ambiente, actuando de manera ética y sostenible, respondiendo a estándares nacionales e internacionales<br>El egresado de la Carrera de Diseño de Moda del Instituto Profesional INACAP:<br><li> Diseña sistemas de moda, proponiendo soluciones creativas según requerimientos del cliente, necesidades del usuario y condiciones del mercado, para crear valor en productos y servicios, aplicando metodologías de la creatividad e innovación.<br></li><li> Genera soluciones de innovación en los procesos productivos de moda, de acuerdo a variables técnicas, tecnológicas y presupuestarias según requerimientos del cliente, necesidades del usuario y condiciones del mercado, resolviendo problemas de carácter multidisciplinario e innovando en modelos sostenibles aplicables en entornos nacionales e internacionales.<br></li><li> Gestiona proyectos empresariales y emprendimientos de diseño de moda, según objetivos de marketing, producción, comunicación y comercialización de productos y servicios, liderando equipos de trabajo.<br></li><li> Propone soluciones de comunicación en el diseño de moda, según modos de actuar de marcas, productos y servicios, argumentando sus propuestas desde el análisis de estilos de vida y tendencias de socioconsumo.		
+				</ul>
+				
+			</div>
+							  
+							  </span>
+							</div>
+
+							<script>
+							// When the user clicks on div, open the popup
+							function myFunctionARK10() {
+							  var popup = document.getElementById("myPopupARK10");
+							  popup.classList.toggle("show");
+							}
+							</script>
+
+		  </div>
+            </div>
+            <div class="col-md-6">
+              <p>Equipo Directivo:<br>
+              <br>Director de Carrera: <b>Macarena Cuadra Barturen.</b>
+              <br>Correo: <b>mcuadra@inacap.cl&nbsp;</b>
+              <br>Teléfono: <b>+56224722552</b> <br>
+              <br>Coordinador de Carrera: <b>Bernardita Chamorro Castro.</b>
+              <br>Correo: <b>bchamorro@inacap.cl&nbsp;</b>
+              <br>Teléfono: <b>+56224722556</b> <br>
+              <br>Coordinador de Especialidad: <b> María Yunis Jacir.</b> 
+              <br>Correo: <b>myunis@inacap.cl</b> 
+              <br>Teléfono: +56224722928               
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div>
+      <div class="container">
+        <div class="row">
+<div class="col-md-12">
+      <h6 class=""><b>Campo Ocupacional</b>
+        <br></h6>
+        <ul>El titulado de la Carrera de Diseño de Moda del Instituto Profesional INACAP podrá desempeñarse en el área del diseño y la comunicación, participando en el diseño, la producción, la gestión y la comunicación estratégica de proyectos de diseño de moda.
+            Además, podrá trabajar en empresas y/o instituciones del ámbito público o privado, dedicadas al desarrollo, elaboración, ventas y/o comunicación de productos de moda; empresas productivas, oficinas de diseño de productos y servicios, industria del retail, departamentos de innovación, incubadoras de negocios, departamentos de comercialización, laboratorios de tendencias, industrias culturales; y consultoras de investigación de mercado, o bien ejercer de manera independiente, como freelance y/o emprendedor.</ul>
+    </div></div></div></div>
+
+
+
+  <div class="py-5 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h6 class="text-left"><b>Admisión Primer Semestre 2020</b><br></h6><img class="img-fluid d-block" src="img/aranceldisenadordemoda.PNG" style="">
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <br><br><br>
+
+  <div >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+            <h6 class="text-left"><a href="http://www.inacap.cl/web/pdf_mallas/03_diseno_y_comunicacion/DMP-DMP0-1_Diseno_IP.pdf"><b>Revisar Malla Diseño de Moda&nbsp;</b></a><br></h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12"></div>
+      </div>
+    </div>
+  </div>
+ 
+
+  
+
+
+  
+  <div class="py-5 text-white" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, .75)), url(https://static.pingendo.com/cover-bubble-dark.svg);  background-position: center center, center center;  background-size: cover, cover;  background-repeat: repeat, repeat;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 text-center align-self-center p-4">
+          <p class="mb-5"> <strong>INACAP Sede Apoquindo<strong> <br>Dirección: Apoquindo 7282, Las Condes<br> Teléfono: (56) 224722500<br> Mail: apoquindo@inacap.cl<br></strong></strong></p><strong><strong>
+				<div class="row">
+                <div class="col-md-12 d-flex align-items-center justify-content-around"> <a href="#">
+                    <i class="d-block fa fa-facebook-official text-light fa-lg mx-2"></i>
+                  </a> <a href="#">
+                    <i class="d-block fa fa-instagram text-light fa-lg mx-2"></i>
+                  </a>   <a href="#">
+                    <i class="d-block fa fa-twitter text-light fa-lg ml-2"></i>
+                  </a> </div>
+              </div>
+            </strong></strong>
+        </div><strong><strong>
+            <div class="col-md-6 p-0"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.5755200761105!2d-70.5555654838491!3d-33.40823690273494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cec02ea4cebf%3A0x29dd711ed6294ee3!2sInacap+Apoquindo!5e0!3m2!1ses!2scl!4v1540305071437" width="400" height="300" frameborder="0" style="border:0" allowfullscreen=""></iframe></div>
+          </strong></strong>
+      </div><strong><strong>
+        </strong></strong>
+    </div><strong><strong>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      </strong></strong>
+  </div>
+</body>
+
+</html>
